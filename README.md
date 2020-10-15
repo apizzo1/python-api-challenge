@@ -6,9 +6,11 @@ This challenge was to investigate different weather factors for 500+ cities arou
 * [OpenweatherMap API](https://openweathermap.org/api) - used to collect weather data for cities around the world
 * [CitiPy](https://pypi.org/project/citipy/) - used to generate list of cities to be analyzed in this challenge
 
+## WeatherPy 
+
 First, a list of 500+ cities was generated using CitiPy. Next, weatherdata was collected using OpenWeatherMap's API. A print log of each city as it's being processed with the city number and city name can be seen in the jupyter notebook output. The list of cities used was exported to a csv and can be found in the output folder under WeatherPy.
 
-## Visualizations
+### Visualizations
 
 Scatter plots were generated to show the following relationships:
 * Temperature (F) vs. Latitude
