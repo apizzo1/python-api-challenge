@@ -3,8 +3,8 @@
 ## Challenge Details
 
 This challenge was to investigate different weather factors for 500+ cities around the world. To perform this analysis, the following resources were used:
-* [OpenweatherMap API](https://openweathermap.org/api)
-* [CitiPy](https://pypi.org/project/citipy/)
+* [OpenweatherMap API](https://openweathermap.org/api) - used to collect weather data for cities around the world
+* [CitiPy](https://pypi.org/project/citipy/) - used to generate list of cities to be analyzed in this challenge
 
 ## Visualizations
 
@@ -24,7 +24,9 @@ From there, linear regression was run on each relationship, separating the data 
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-Please note: Observations of trends from Part I WeatherPy data are shown after each plot.
+To create these linear regressions more efficiently, a function (linregress_func) was created.
+
+Observations of trends are shown after each plot.
 
 ## Files Included
 
