@@ -5,7 +5,7 @@
 This challenge was to investigate different weather factors for 500+ cities around the world. To perform this analysis, the following resources were used:
 * [OpenweatherMap API](https://openweathermap.org/api) - used to collect weather data for cities around the world
 * [CitiPy](https://pypi.org/project/citipy/) - used to generate list of cities to be analyzed in this challenge
-* [Google Places API](https://developers.google.com/places/web-service/overview)
+* [Google Places API](https://developers.google.com/places/web-service/overview) - used for humidty map visualizations and finding nearest hotels to specified coordinates
 
 ## WeatherPy 
 
@@ -44,10 +44,13 @@ Next, the data from WeatherPy was filtered to include locations ideal for a vaca
 * A max temperature lower than 80 degrees but higher than 70.
 * Wind speed less than 10 mph
 * Zero cloudiness
+* Humidity less than 80%
 
 From this filtered data, the Google Places API was used to locate the first hotel for each city located within 5000m of the filtered data coordinates.
 
 Finally, the hotels were plotted on the humidity heatmap with a pin, which contains the hotel name, city, and country.
+
+### Visualizations
 
 ## Files Included
 
