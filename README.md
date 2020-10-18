@@ -2,7 +2,7 @@
 
 ## Challenge Details
 
-This challenge was to investigate different weather factors for 500+ cities around the world. To perform this analysis, the following resources were used:
+This challenge was to investigate and analyze different weather factors for 500+ cities around the world, and create varying visualizations, including maps, scatter plots and linear regressions. To perform this analysis, the following resources were used:
 * [OpenweatherMap API](https://openweathermap.org/api) - used to collect weather data for cities around the world
 * [CitiPy](https://pypi.org/project/citipy/) - used to generate list of cities to be analyzed in this challenge
 * [Google Places API](https://developers.google.com/places/web-service/overview) - used for humidty map visualizations and finding nearest hotels to specified coordinates
