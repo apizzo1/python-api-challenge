@@ -41,3 +41,10 @@ Observations of trends are shown after each plot.
     * WeatherPy jupyter notebook, which contains all analysis for WeatherPy part of the challenge
     * Output folder containing cities.csv and scatter plot visualizations
 * index.html 
+
+## API key
+
+In order to access OpenWeatherMap API and Google Places API, API keys were required. These were not uploaded to this repository, to keep them private. To run this code, the user would need to create a file entitled api_keys.py with the following format:
+
+weather_api_key = "Your OpenWeatherMap API key here"
+g_key = "Your Google Places API key here"
