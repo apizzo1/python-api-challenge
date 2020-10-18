@@ -5,6 +5,7 @@
 This challenge was to investigate different weather factors for 500+ cities around the world. To perform this analysis, the following resources were used:
 * [OpenweatherMap API](https://openweathermap.org/api) - used to collect weather data for cities around the world
 * [CitiPy](https://pypi.org/project/citipy/) - used to generate list of cities to be analyzed in this challenge
+* [Google Places API](https://developers.google.com/places/web-service/overview)
 
 ## WeatherPy 
 
@@ -34,6 +35,20 @@ To create these linear regressions more efficiently, a function (linregress_func
 
 Observations of trends are shown after each plot.
 
+## VacationPy
+
+First, a heat map was created that displays the humidity for every city from the WeatherPy challenge. 
+
+Next, the data from WeatherPy was filtered to include locations ideal for a vacation, specifically:
+
+* A max temperature lower than 80 degrees but higher than 70.
+* Wind speed less than 10 mph
+* Zero cloudiness
+
+From this filtered data, the Google Places API was used to locate the first hotel for each city located within 5000m of the filtered data coordinates.
+
+Finally, the hotels were plotted on the humidity heatmap with a pin, which contains the hotel name, city, and country.
+
 ## Files Included
 
 * VacationPy folder - the VacationPy jupyter notebook can be found here, which contains all analysis for VacationPy part of the challenge
@@ -42,7 +57,7 @@ Observations of trends are shown after each plot.
     * Output folder containing cities.csv and scatter plot visualizations
 * index.html 
 
-## API key
+## API keys
 
 In order to access OpenWeatherMap API and Google Places API, API keys were required. These were not uploaded to this repository, to keep them private. To run this code, the user would need to create a file entitled api_keys.py with the following format:
 
